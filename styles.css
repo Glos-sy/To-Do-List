@@ -1,0 +1,209 @@
+/* cancel(x) and add(check) */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* lavender white */
+/* font-family: "Edu AU VIC WA NT Hand", cursive; */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(50deg, rgb(47, 5, 5), rgb(100, 7, 7), rgb(8, 8, 255));
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+header {
+    margin: 4rem 0 6rem;
+}
+
+header h1 {
+    font-size: 7rem;
+    text-align: center;
+}
+
+header p {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+form {
+    height: 8vw;
+    margin: 10rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    height: 6rem;
+    width: 40rem;
+    margin: 1rem 0;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+form button {
+    height: 6rem;
+    width: 6rem;
+    background-color: white;
+    border: none;
+    font-size: 10rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 5, 5);
+    color: lightblue;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(129, 46, 46);
+    color: rgb(203, 231, 241);
+    cursor: pointer;
+}
+
+li {
+    font-size: 1.9rem;
+}
+
+.to-do-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list {
+    min-width: 30%;
+    list-style: none;
+
+}
+
+
+.to-do {
+    margin: 0.5rem;
+    background-color: rgb(209, 235, 243);
+    color: rgb(87, 1, 1);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 0rem 0rem 0rem 2rem;
+    font-weight: 600;
+    width: 65%;
+}
+
+/* .complete-btn {
+    position: relative;
+    right: -8rem;
+} */
+
+.trash-btn, .complete-btn {
+    background-color: rgb(80, 11, 11);
+    color: lightblue;
+    padding: 0 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 5.2rem;
+    width: 5rem;
+    margin: 0.3rem;
+}
+
+.to-do-item {
+    flex: 1;
+    padding: 1rem 0.2rem;
+    height: 5rem;
+}
+
+.trash-btn {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.fa-xmark, .fa-check {
+    pointer-events: none;
+}
+
+.fall {
+    opacity: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+@keyframes fall-animation {
+    0% {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-5px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+    80% {
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select {
+    color: rgb(87, 1, 1);
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 15rem;
+    cursor: pointer;
+    padding: 1.1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+select option {
+    font-weight: 600;
+    border-radius: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+}
