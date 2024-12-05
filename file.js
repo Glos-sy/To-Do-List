@@ -45,7 +45,8 @@ function addToDo(e) {
   // toDoDiv.appendChild(completedButton);
 
   const completedButton = document.createElement("button");
-  completedButton.innerHTML = `<i class="fas fa-check"></i>`;
+  // completedButton.innerHTML = `<i class="fas fa-check"></i>`;
+  completedButton.innerHTML = "\u2714";
   completedButton.classList.add("complete-btn");
   toDoDiv.appendChild(completedButton);
 
@@ -67,7 +68,8 @@ function addToDo(e) {
 
   // DELETE
   const trashButton = document.createElement("button");
-  trashButton.innerHTML = `<i class="fas fa-xmark"></i>`;
+  // trashButton.innerHTML = `<i class="fas fa-xmark"></i>`;
+  trashButton.innerHTML = "\u0058";
   trashButton.classList.add("trash-btn");
   toDoDiv.appendChild(trashButton);
 
