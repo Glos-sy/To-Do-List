@@ -87,9 +87,7 @@ function deleteCheck(e) {
   if (item.classList[0] === "trash-btn") {
     const todo = item.parentElement;
     todo.classList.add("fall");
-    todo.addEventListener("transitionend", () => {
-      todo.remove();
-    });
+    todo.remove();
   }
 
   if (item.classList[0] === "complete-btn") {
@@ -125,3 +123,41 @@ function filterTodo(e) {
     }
   });
 }
+
+// LOCAL AND SESSION STORAGE
+// localStorage.setItem("todo", "write");
+// sessionStorage.setItem("todo", "dance");
+
+// sessionStorage.clear();
+
+// localStorage.remove("todo");
+// localStorage.clear();
+
+// localStorage.setItem("todo", "write");
+// localStorage.setItem("todo", "read");
+// localStorage.setItem("todo", "dance");
+
+// const newStorage = localStorage.getItem("todo");
+// console.log(newStorage);
+
+// Array into Local Storage
+// const todoItems = {
+//   todo1: "read",
+//   todo2: "write",
+//   todo3: "sleep",
+//   todo4: "dance",
+//   todo5: "eat",
+//   todo6: "cook",
+// };
+
+// localStorage.setItem("todo", todoItems);
+
+// const retrieveItem = localStorage.getItem("todo");
+// console.log(retrieveItem, typeof retrieveItem);
+
+// STRINGIFY AND PARSE
+
+// localStorage.setItem("todo", JSON.stringify(todoItems));
+
+// const retrieveItem = JSON.parse(localStorage.getItem("todo"));
+// console.log(retrieveItem, typeof retrieveItem);
