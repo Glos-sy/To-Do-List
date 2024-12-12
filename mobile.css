@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form input {
+    height: 5.3rem;
+    width: 25rem;
+}
+
+form button {
+    height: 5.2rem;
+    width: 4.6rem;
+}
+
+select {
+    width: 8rem;
+}

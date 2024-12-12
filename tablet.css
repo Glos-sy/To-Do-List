@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+form input {
+    height: 4.9rem;
+    width: 32rem;
+}
+
+form button {
+    height: 4.9rem;
+    width: 4.5rem;
+}
+
+select {
+    width: 10rem;
+}
